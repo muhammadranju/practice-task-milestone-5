@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Please add your comment</h1>
+    <div id="comment-container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam
+        optio impedit, nam animi a cupiditate quidem quasi aperiam. Accusamus
+        perspiciatis eos beatae sed quam? Iure, culpa ullam optio saepe modi
+        veritatis ipsa mollitia, illo sed perferendis necessitatibus at velit
+        excepturi nihil pariatur suscipit voluptatem quis nulla inventore,
+        voluptate facere!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam
+        optio impedit, nam animi a cupiditate quidem quasi aperiam. Accusamus
+        perspiciatis eos beatae sed quam? Iure, culpa ullam optio saepe modi
+        veritatis ipsa mollitia, illo sed perferendis necessitatibus at velit
+        excepturi nihil pariatur suscipit voluptatem quis nulla inventore,
+        voluptate facere!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam
+        optio impedit, nam animi a cupiditate quidem quasi aperiam. Accusamus
+        perspiciatis eos beatae sed quam? Iure, culpa ullam optio saepe modi
+        veritatis ipsa mollitia, illo sed perferendis necessitatibus at velit
+        excepturi nihil pariatur suscipit voluptatem quis nulla inventore,
+        voluptate facere!
+      </p>
+    </div>
+    <textarea name="" id="comment-box" cols="80" rows="10"></textarea>
+    <br />
+    <button id="btn-post">Post</button>
+
+    <!-- This function handles the click event on the "Post" button. -->
+    <!-- It retrieves the user's comment from the textarea, validates it, and adds it to the comment section. -->
+    <script>
+      document
+        .getElementById("btn-post")
+        .addEventListener("click", function () {
+          // Retrieve the comment textarea element
+          const commentBox = document.getElementById("comment-box");
+
+          // Trim any leading or trailing whitespace from the comment
+          const newComment = commentBox.value.trim();
+
+          // Check if the comment is empty
+          if (newComment === "") {
+            // Display an alert message to the user
+            alert("Please enter a comment before posting.");
+            // Exit the function
+            return;
+          }
+
+          // Retrieve the comment container element
+          const commentContainer = document.getElementById("comment-container");
+
+          // Create a new paragraph element
+          const p = document.createElement("p");
+
+          // Set the text content of the paragraph to the new comment
+          p.textContent = newComment;
+
+          // Append the new paragraph to the comment container
+          commentContainer.appendChild(p);
+
+          // Clear the comment textarea
+          commentBox.value = "";
+        });
+    </script>
+  </body>
+</html>
