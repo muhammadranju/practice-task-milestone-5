@@ -28,3 +28,23 @@ document.getElementById("btn-post").addEventListener("click", function () {
   // Clear the comment textarea
   commentBox.value = "";
 });
+
+const li = document.createElement("li");
+li.innerText = "This is Salbon, Katabon";
+div.appendChild(li);
+
+console.log(li);
+
+// console.log(div);\
+
+btn.addEventListener("click", function () {
+  btn.innerText = "Remove Css";
+  btn.classList.add("btn");
+  for (se of section) {
+    se.style.border = "2px solid red";
+    se.style.margin = "20px";
+    se.style.padding = "20px";
+    se.style.borderRadius = "20px";
+    se.style.backgroundColor = "lightgrey";
+  }
+});
