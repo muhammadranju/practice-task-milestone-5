@@ -59,3 +59,11 @@ li.innerText = "This is Salbon, Katabon";
 div.appendChild(li);
 
 console.log(li);
+
+const li2 = document.createElement("li");
+li2.innerText = "This is Salbon, Katabon";
+div.appendChild(li2);
+
+const li3 = document.createElement("li");
+li3.innerText = "This is Salbon, Katabon";
+div.appendChild(li2);
