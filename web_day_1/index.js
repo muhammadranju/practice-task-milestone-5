@@ -60,10 +60,52 @@ div.appendChild(li);
 
 console.log(li);
 
-const li2 = document.createElement("li");
-li2.innerText = "This is Salbon, Katabon";
-div.appendChild(li2);
+// console.log(div);\
 
-const li3 = document.createElement("li");
-li3.innerText = "This is Salbon, Katabon";
-div.appendChild(li2);
+btn.addEventListener("click", function () {
+  btn.innerText = "Remove Css";
+  btn.classList.add("btn");
+  for (se of section) {
+    se.style.border = "2px solid red";
+    se.style.margin = "20px";
+    se.style.padding = "20px";
+    se.style.borderRadius = "20px";
+    se.style.backgroundColor = "lightgrey";
+  }
+});
+
+btn.addEventListener("click", function () {
+  btn.innerText = "Remove Css";
+  btn.classList.add("btn");
+  for (se of section) {
+    se.style.border = "2px solid red";
+    se.style.margin = "20px";
+    se.style.padding = "20px";
+    se.style.borderRadius = "20px";
+    se.style.backgroundColor = "lightgrey";
+  }
+});
+
+btn.addEventListener("click", function () {
+  btn.innerText = "Remove Css";
+  btn.classList.add("btn");
+  for (se of section) {
+    se.style.border = "2px solid red";
+    se.style.margin = "20px";
+    se.style.padding = "20px";
+    se.style.borderRadius = "20px";
+    se.style.backgroundColor = "lightgrey";
+  }
+});
+
+btn.addEventListener("click", function () {
+  btn.innerText = "Remove Css";
+  btn.classList.add("btn");
+  section.forEach((se) => {
+    se.style.border = "2px solid red";
+    se.style.margin = "20px";
+    se.style.padding = "20px";
+    se.style.borderRadius = "20px";
+    se.style.backgroundColor = "lightgrey";
+  });
+});
