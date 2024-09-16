@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li,
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Explore the world</h1>
+    <ul id="list-container">
+      <li class="item">Learn about the different countries</li>
+      <li class="item">Explore the different cities</li>
+      <li class="item">Discover the different landmarks</li>
+      <li class="item">Visit the museums</li>
+      <li class="item">Go on a tour</li>
+    </ul>
+    <button id="btn-add">Add Item</button>
+  </body>
+
+  <script>
+    const items = document.querySelectorAll(".item");
+
+    // for (let item of items) {
+    //   item.addEventListener("click", (event) => {
+    //     event.target.parentNode.removeChild(event.target);
+    //   });
+
+    // }
+
+    document
+      .getElementById("list-container")
+      .addEventListener("click", (event) => {
+        event.target.parentNode.removeChild(event.target);
+      });
+
+    document.getElementById("btn-add").addEventListener("click", () => {
+      const listContainer = document.getElementById("list-container");
+      const li = document.createElement("li");
+
+      li.innerText =
+        "This is Salbon, Katabon " + Math.floor(Math.random() * 100);
+      li.classList.add("item");
+      listContainer.appendChild(li);
+    });
+  </script>
+</html>
