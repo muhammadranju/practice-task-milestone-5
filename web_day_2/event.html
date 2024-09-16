@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body>
+    <h1>More Event</h1>
+    <button id="btn-event">Add Event</button>
+    <input id="input-event" type="text" />
+    <script src="./evenet.js"></script>
+
+    <script>
+      document
+        .getElementById("input-event")
+        .addEventListener("keyup", function (e) {
+          console.log("event triggered inside the input field");
+          console.log(e.target.value);
+        });
+      document
+        .getElementById("btn-event")
+        .addEventListener("mouseup", function () {
+          console.log("event triggered");
+        });
+    </script>
+  </body>
+</html>
