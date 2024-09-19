@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container mx-auto flex justify-center mt-5">
+      <div class="artboard phone-4 border rounded-md bg-base-200">
+        <div class="flex justify-center items-center flex-col mt-44">
+          <div class="mb-5">
+            <img src="./image/logo.png" class="w-16" alt="" />
+          </div>
+          <div class="card w-[340px] shrink-0 rounded-2xl bg-base-100">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-semibold">Mobile Number</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your number"
+                  class="input input-bordered rounded-full border-0 bg-base-200"
+                  required
+                />
+                <span class="ml-4 font-semibold text-red-500"> </span>
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text font-semibold">4 Digit Pin</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="Enter 4 Digit Pin"
+                  class="input input-bordered border-0 rounded-full bg-base-200"
+                  required
+                />
+                <span class="ml-4 font-semibold text-red-500"> </span>
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary rounded-full text-lg font-bold">
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

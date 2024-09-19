@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="./image/icon-1.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main class="container mx-auto flex justify-center mt-5 rounded-md">
+      <!-- <div class="artboard phone-5 border rounded-md"> -->
+      <div class="artboard phone-5">
+        <div class="mt-5">
+          <!-- Available Balance -->
+          <section class="flex flex-row justify-between gap-x-16 px-4">
+            <div class="flex justify-center items-center space-x-1">
+              <img src="./image/logo.png" class="w-10 h-10" alt="" />
+              <div>
+                <h2 class="font-bold">$45000</h2>
+                <span class="text">Available Balance</span>
+              </div>
+            </div>
+            <div>
+              <div
+                class="flex flex-row justify-center items-center p-2 px-3 border-[1px] rounded-xl cursor-pointer"
+              >
+                <i class="fa-solid fa-right-to-bracket rotate-180 mr-2"></i> Log
+                Out
+              </div>
+            </div>
+          </section>
+
+          <!-- divider -->
+          <div class="divider"></div>
+          <!-- divider -->
+
+          <!-- Welcome to Payooo -->
+          <section class="px-4">
+            <h1 class="text-2xl font-bold">🔥Welcome to Payooo!</h1>
+            <p class="text-gray-500">
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+          </section>
+
+          <!-- grid card section  -->
+          <section class="grid grid-cols-3 gap-5 mt-5 px-4">
+            <div
+              class="flex flex-col justify-center items-center border-[1px] rounded-md py-3 cursor-pointer"
+            >
+              <img src="./image/icon-1.png" class="w-6" alt="" />
+              <span class="text-sm">Add Money</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-[1px] rounded-md p-3 cursor-pointer"
+            >
+              <img src="./image/icon-2.png" class="w-6" alt="" />
+              <span class="text-sm">Cashout</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-[1px] rounded-md py-3 cursor-pointer"
+            >
+              <img src="./image/icon-3.png" class="w-6" alt="" />
+              <span class="text-sm">Transfer Money</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-[1px] rounded-md py-3 cursor-pointer"
+            >
+              <img src="./image/icon-4.png" class="w-6" alt="" />
+              <span class="text-sm">Get Bonus</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-[1px] rounded-md py-3 cursor-pointer"
+            >
+              <img src="./image/icon-5.png" class="w-6" alt="" />
+              <span class="text-sm">Pay Bill</span>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center border-[1px] rounded-md py-3 cursor-pointer"
+            >
+              <img src="./image/icon-6.png" class="w-6" alt="" />
+              <span class="text-sm">Transactions</span>
+            </div>
+          </section>
+
+          <!-- Latest Payment -->
+          <section
+            class="bg-gray-200 py-1 mt-3 px-4 rounded-xl hidden"
+            id="latestPaymentSection"
+          >
+            <div class="space-y-4 mt-5 p-3 rounded-md px-4">
+              <div class="flex justify-between">
+                <h4 class="font-bold">Latest Payment</h4>
+                <span class="text-sm">View All</span>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Add Money -->
+          <section
+            class="bg-gray-200 py-3 mt-3 px-4 rounded-xl"
+            id="addMoneySection"
+          >
+            <div class="flex justify-between px-4 mb-2">
+              <h4 class="font-bold">Latest Payment</h4>
+            </div>
+            <div class="card w-[340px] mx-auto rounded-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Select A Bank</span>
+                  </label>
+                  <select
+                    class="select select-bordered w-full max-w-xs rounded-full border-0 bg-base-200"
+                  >
+                    <option disabled selected hidden>Select back</option>
+                    <option>Han Solo</option>
+                    <option>Greedo</option>
+                  </select>
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold"
+                      >Bank Account Number</span
+                    >
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 11 digit account number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Amount to Add</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Add Amount to withdraw"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Pin Number</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 4 digit pin number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    class="btn btn-primary rounded-full text-lg font-bold"
+                  >
+                    Add Money
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Cash Out -->
+          <section
+            class="bg-gray-200 py-5 mt-3 px-4 rounded-xl hidden"
+            id="cashOutSection"
+          >
+            <div class="flex justify-between px-4 mb-2">
+              <h4 class="font-bold">Cash Out</h4>
+            </div>
+            <div class="card w-[340px] mx-auto rounded-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Agent Number</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 11 digit account number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Amount </span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter amount to withdraw"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Pin Number</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 4 digit pin number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    class="btn btn-primary rounded-full text-lg font-bold"
+                  >
+                    Withdraw Money
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Transfer Money -->
+          <section
+            class="bg-gray-200 py-5 mt-3 px-4 rounded-xl hidden"
+            id="transferMoneySection"
+          >
+            <div class="flex justify-between px-4 mb-2">
+              <h4 class="font-bold">Transfer Money</h4>
+            </div>
+            <div class="card w-[340px] mx-auto rounded-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold"
+                      >User Account Number</span
+                    >
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 11 digit account number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Amount </span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter amount to withdraw"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Pin Number</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 4 digit pin number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    class="btn btn-primary rounded-full text-lg font-bold"
+                  >
+                    Send Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Get Bonus -->
+          <section
+            class="bg-gray-200 py-5 mt-3 px-4 rounded-xl hidden"
+            id="sendNowSection"
+          >
+            <div class="flex justify-between px-4 mb-2">
+              <h4 class="font-bold">Get Bonus</h4>
+            </div>
+            <div class="card w-[340px] mx-auto rounded-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold"
+                      >Enter Bonus Coupon</span
+                    >
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter your coupon"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+
+                <div class="form-control mt-6">
+                  <button
+                    class="btn btn-primary rounded-full text-lg font-bold"
+                  >
+                    Send Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Pay Bill -->
+          <section
+            class="bg-gray-200 py-3 mt-3 px-4 rounded-xl hidden"
+            id="payBillSection"
+          >
+            <div class="flex justify-between px-4 mb-2">
+              <h4 class="font-bold">Pay Bill</h4>
+            </div>
+            <div class="card w-[340px] mx-auto rounded-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Select To Pay</span>
+                  </label>
+                  <select
+                    class="select select-bordered w-full max-w-xs rounded-full border-0 bg-base-200"
+                  >
+                    <option disabled selected hidden>Select back</option>
+                    <option>Han Solo</option>
+                    <option>Greedo</option>
+                  </select>
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold"
+                      >Bank Account Number</span
+                    >
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 11 digit account number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Amount to Add</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Add Amount to withdraw"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Pin Number</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 4 digit pin number"
+                    class="input input-bordered border-0 rounded-full bg-base-200"
+                    required
+                  />
+                  <span class="ml-4 font-semibold text-red-500"> </span>
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    class="btn btn-primary rounded-full text-lg font-bold"
+                  >
+                    Pay Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Transaction History -->
+          <section
+            class="bg-gray-200 py-1 mt-3 px-4 rounded-xl hidden"
+            id="transactionHistorySection"
+          >
+            <div class="space-y-4 mt-5 p-3 rounded-md px-4">
+              <div class="flex justify-between">
+                <h4 class="font-bold">Transaction History</h4>
+                <span class="text-sm">View All</span>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div
+                class="bg-white flex justify-between items-center rounded-xl"
+              >
+                <div
+                  class="flex flex-row justify-center items-center gap-2 p-2"
+                >
+                  <div class="p-2 rounded-full bg-gray-200">
+                    <img src="./image/icon-1.png" class="w-7 h-7" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Electricity Bill</h4>
+                    <p class="text-sm">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="cursor-pointer p-4">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
