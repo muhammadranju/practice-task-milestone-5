@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poyooo MFS</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="container mx-auto flex flex-col items-center justify-center mt-2"
+    >
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Warning Pay attention!</h3>
+          <p class="py-4 font-semibold text-red-500">
+            Invalid Credential Phone number or Pin number
+          </p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-4">
+            <div class="hero bg-base-200 min-h-screen">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Phone Number</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="phone-number"
+                        placeholder="Your Phone Number"
+                        class="input input-bordered"
+                        required
+                      />
+                      <span
+                        id="invalid-phone"
+                        class="text-xs ml-2 text-red-500 font-medium"
+                      ></span>
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input
+                        type="password"
+                        id="pin-number"
+                        placeholder="Your Pin Number"
+                        class="input input-bordered"
+                        required
+                      />
+
+                      <span
+                        id="invalid-pin"
+                        class="text-xs ml-2 text-red-500 font-medium"
+                      ></span>
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover"
+                          >Forgot password?</a
+                        >
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn-login" class="btn btn-primary">
+                        Login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
